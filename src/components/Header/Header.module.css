@@ -1,0 +1,21 @@
+.Header {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+  
+  .HeaderList {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .HeaderItem {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .HeaderItem:hover {
+    color: green;
+  }

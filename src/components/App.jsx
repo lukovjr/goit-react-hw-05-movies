@@ -1,19 +1,25 @@
-import { Routes, Route, NavLink } from "react-router-dom";
-import Home from "pages/Home";
-import Movies from "pages/Movies";
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { lazy } from 'react';
+import SharedLayout from './SharedLayout/SharedLayout';
+
+const Home = lazy(() => import('../pages/Home'));
+const Movies = lazy(() => import('../pages/Movies'));
+const MovieDetails = lazy(() => import('../pages/MoviesDetails'));
+const Cast = lazy(() => import('./Cast/Cast'));
+const Reviews = lazy(() => import('./Reviews/Reviews'));
 
 export const App = () => {
   return (
-    <div>
-      <nav>
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/movies">Movies</NavLink>
-      </nav>
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Movies" element={<Movies />} />
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:movieId" element={<MovieDetails />}>
+            <Route path="/movies/:movieId/cast" element={<Cast />} />
+            <Route path="/movies/:movieId/reviews" element={<Reviews />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
       </Routes>
-    </div>
   );
 };

@@ -1,8 +1,10 @@
-import React from 'react';
+import SearchForm from '../components/SearchForm/SearchForm';
 
-const Movies = () => { 
-    
-    return <div>Movie detail</div>;
+const Movies = () => {
+  return (
+    <>
+      <SearchForm />
+    </>
+  );
 };
-
 export default Movies;

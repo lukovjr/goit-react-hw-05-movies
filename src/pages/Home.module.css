@@ -1,0 +1,19 @@
+.HomeTitle {
+    margin-left: 25px;
+  }
+
+  .HomeList {
+    display: inline-grid;
+    gap: 6px;
+  }
+  
+  .HomeLink {
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .HomeLink:hover {
+    color: green;
+    font-size: 27px;
+   
+  }

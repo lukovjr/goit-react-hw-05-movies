@@ -1,0 +1,63 @@
+.Btn {
+  border: 1px solid #8e8e8e;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  }
+  
+  .Btn:hover,
+  .Btn:focus {
+    background-color: #e5e6eb;
+    box-shadow: -1px 12px 12px -9px rgba(34, 60, 80, 0.2);
+  }
+  .Detals {
+    border-bottom: 1px solid black;
+  }
+  
+  .Img {
+    width: 300px;
+  }
+  
+  .Info {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  .DetalsItem {
+    list-style: none;
+  }
+  
+  .Genres {
+    padding-left: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .Films {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .Inform {
+    padding-left: 20px;
+  }
+  
+  .InformList {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+  }
+   
+    .InformItem {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .InformItem:hover {
+    color: green;
+  }
